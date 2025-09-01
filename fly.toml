@@ -1,0 +1,11 @@
+app = "mytube"
+
+[build]
+  image = "python:3.11-slim"
+
+[mounts]
+  source="mydata"
+  destination="/data"
+
+[env]
+  PORT = "8080"
